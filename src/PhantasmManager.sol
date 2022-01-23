@@ -19,8 +19,8 @@ interface bondImplementation {
     function buyYieldTokens (address _assetPool, uint64 _depositId, uint256 _stableInAmount) external returns (uint64 _fundingID, uint256 fundingMultitokensMinted, uint256 actualFundAmount, uint256 principalFunded);
 }
 
-contract PhantasmManager is ERC721 {
-
+contract PhantasmManager  {
+    /*
     address private owner;
 
     struct Position {
@@ -49,7 +49,7 @@ contract PhantasmManager is ERC721 {
             \/ \__,_|\__,_|_|\__| |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
                                                                                 
                                                                                 
-    */
+    
     function addPosition(Position memory _newPosition) internal returns(uint256) {
         counter++;
         //Push Position to ledger
@@ -79,7 +79,7 @@ contract PhantasmManager is ERC721 {
     |_____|_| |_| |_| .__/|_|\___|_| |_| |_|\___|_| |_|\__\__,_|\__|_|\___/|_| |_|___/
                     | |                                                               
                     |_|                                                               
-    */
+    
 
 
     address[] public swapImplementations;
@@ -112,7 +112,7 @@ contract PhantasmManager is ERC721 {
         |______\___| \_/ \___|_|  \__,_|\__, |_|_| |_|\__, |
                                         __/ |         __/ |
                                         |___/         |___/ 
-    */
+    
 
     function openLongPositionNFT(
         uint64 _lenderImplementation, 
@@ -202,7 +202,7 @@ contract PhantasmManager is ERC721 {
     _| |_| | | \__ \ |_| | | (_| | ||  __/ (_| |
     |_____|_| |_|___/\__,_|_|\__,_|\__\___|\__,_|
                                               
-*/
+
     function openInsulatedLongPositionNFT(
         address _longToken,
         uint256 _borrowFactor,
@@ -256,5 +256,5 @@ contract PhantasmManager is ERC721 {
     }
 
 
-
+    */
 }
